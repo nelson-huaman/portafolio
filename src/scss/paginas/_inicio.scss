@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dev {
+   height: 100vh;
+   display: flex;
+   background-color: v.$azul;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   &__contenido {
+      width: 95%;
+      max-width: 40%;
+   }
+   
+   &__logo {
+      font-size: 3rem;
+      font-weight: v.$bold;
+      color: v.$blanco;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+   }
+
+   &__tag {
+      color: v.$blanco;
+   }
+
+   &__nombre {
+      margin: 0;
+      color: v.$blanco;
+   }
+
+   &__descripcion {
+      color: v.$blanco;
+   }
+}

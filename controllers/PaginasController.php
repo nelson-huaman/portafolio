@@ -6,17 +6,19 @@ use MVC\Router;
 
 class PaginasController {
 
+   public static function error(Router $router) {
+
+      $router->renderizar('paginas/error', [
+         'titulo' => 'Página no Encontrada',
+         'descripcion' => 'como le va'
+      ]);
+
+   }
+
    public static function index(Router $router) {
-
-      $dato = [
-         'id' => 1,
-         'nombre' => 'Nelson'
-      ];
-
-      debuguear($dato);
-
+      
       $router->renderizar('paginas/index', [
-         'titulo' => 'Inicio - Home',
+         'titulo' => 'Inicio',
          'descripcion' => 'como le va'
       ]);
 

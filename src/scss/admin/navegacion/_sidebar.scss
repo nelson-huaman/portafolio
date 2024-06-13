@@ -1,0 +1,74 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sidebar {
+   background-color: darken(v.$azul, 15%);
+   padding: 2rem 1rem;
+   width: 25rem;
+
+   &__logo {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid lighten(v.$azul, 1%);
+      padding-bottom: 1.5rem;
+      color: v.$blanco;
+   }
+}
+
+.menu_admin {
+   @include m.lista;
+
+   &__item {
+      margin-bottom: 2rem;
+   }
+
+   &__enlace {
+      color: darken(v.$blanco, 40%);
+      font-weight: v.$medium;
+      white-space: nowrap;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1rem;
+      gap: 1rem;
+
+      &:hover {
+         cursor: pointer;
+         color: v.$blanco;
+      }
+   }
+
+   &__icono {
+      &::after {
+         content: "";
+         width: .6rem;
+         height: .6rem;
+         border-bottom: 2px solid v.$blanco;
+         border-right: 2px solid v.$blanco;
+         rotate: -45grad;
+         margin-right: .2rem;
+      }
+   }
+
+   &__nombre {
+      flex-grow: 1;
+   }
+
+   &__submenu {
+      @include m.lista;
+      padding-left: 2rem;
+      font-size: 1.2rem;
+      display: none;
+   }
+
+   &__open &__submenu {
+      display: block;
+   }
+
+   &__open &__icono {
+      &::after {
+         rotate: 50grad;
+      }
+   }
+
+
+}

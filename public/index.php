@@ -1,5 +1,6 @@
 <?php
 
+use Controllers\DashboardController;
 use Controllers\PaginasController;
 use MVC\Router;
 
@@ -12,6 +13,10 @@ $router->get('/', [PaginasController::class, 'index']);
 
 
 $router->get('/contacto', [PaginasController::class, 'contacto']);
+$router->get('/404', [PaginasController::class, 'error']);
+
+// Administración
+$router->get('/admin/dashboard', [DashboardController::class, 'index']);
 
 
 $router->comprobarURL();
