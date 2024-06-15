@@ -1,5 +1,5 @@
 <header class="header_admin">
-   <div class="header_admin__menu" id="mobil_admin">
+   <div class="header_admin__menu" id="menu_admin">
       <i class="fa-solid fa-bars"></i>
    </div>
    <div class="header_admin__perfil">
@@ -9,19 +9,19 @@
       </div>
       <ul class="header_admin__config">
          <li class="header_admin__item">
-            <a href="#" class="header_admin__enlace">
+            <a href="/admin/perfil" class="header_admin__enlace">
                <i class="header_admin__icon fa-solid fa-user"></i>
                <spna class="header_admin__nombre">Perfil</spna>
             </a>
          </li>
          <li class="header_admin__item">
-            <a href="#" class="header_admin__enlace">
+            <a href="/admin/config" class="header_admin__enlace">
                <i class="header_admin__icon fa-solid fa-gear"></i>
                <spna class="header_admin__nombre">Configuración</spna>
             </a>
          </li>
          <li class="header_admin__item">
-            <a href="#" class="header_admin__enlace">
+            <a href="/logout" class="header_admin__enlace">
                <i class="header_admin__icon fa-solid fa-right-from-bracket"></i>
                <spna class="header_admin__nombre">Salir</spna>
             </a>
