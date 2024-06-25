@@ -1,6 +1,11 @@
 <aside class="sidebar" id="sidebar">
    <div class="sidebar__logo">
-      Sistema
+      <div class="sidebar__nombre-sitio">
+         Sistema
+      </div>
+      <div class="sidebar__cerrar-menuadmin">
+         <i class="fa-solid fa-xmark"></i>
+      </div>
    </div>
    <ul class="menu_admin">
       <li class="menu_admin__item">

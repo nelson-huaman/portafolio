@@ -1,0 +1,11 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.menu_redes {
+   @include m.redes(v.$blanco, 2rem);
+   display: flex;
+   gap: 2rem;
+
+   
+
+}

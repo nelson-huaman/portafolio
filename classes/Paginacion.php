@@ -2,6 +2,6 @@
 
 namespace Classes;
 
-class Email {
+class Paginacion {
    
 }

@@ -3,27 +3,68 @@
 
 .sidebar {
    background-color: darken(v.$azul, 15%);
-   padding: 2rem 1rem;
-   width: 25rem;
+   // width: 25rem;
+   visibility: hidden;
+   opacity: 0;
+   width: 0;
+   transition: visibility .5s linear, opacity .5s linear, width .5s linear;
 
+   @include m.desktop {
+      width: 25rem;
+      visibility: visible;
+      opacity: 1;
+   }
+   
    &--open {
       position: absolute;
       z-index: 1;
-      transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      visibility: visible;
+      opacity: 1;
+      width: 25rem;
 
+      @include m.desktop {
+         position: none;
+         opacity: 0;
+         width: 0;
+         z-index: 0;
+      }
+   }
 
+   &__cerrar-menuadmin {
+      @include m.desktop {
+         visibility: hidden;
+         opacity: 0;
+      }
+   }
+
+   &--close {
+      display: none;
    }
 
    &__logo {
-      margin-bottom: 2rem;
-      border-bottom: 1px solid lighten(v.$azul, 1%);
-      padding-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
       color: v.$blanco;
+      font-weight: v.$bold;
+      align-items: center;
+   }
+
+   &__cerrar-menuadmin {
+      font-size: 3rem;
+
+      &:hover {
+         cursor: pointer;
+      }
    }
 }
 
 .menu_admin {
    @include m.lista;
+   margin: 1rem;
 
    &__item {
       margin-bottom: 2rem;

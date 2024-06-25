@@ -1,5 +1,4 @@
 // Generales
-import './fontawesome.js'
 
 // Publicas
 

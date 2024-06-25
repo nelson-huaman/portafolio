@@ -1,9 +1,2 @@
-<div class="dev">
-
-   <div class="dev__contenido">
-      <div class="dev__logo">&#60;NHDev /></div>
-      <span class="dev__tag">Hola soy</span>
-      <h1 class="dev__nombre">Nelson H.</h1>
-      <p class="dev__descripcion">Esta web está en construcción pronto estaremos Actualizando</p>
-   </div>
-</div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita! Quam quidem nam architecto deleniti, unde molestias fuga quisquam obcaecati. Natus quaerat esse exercitationem temporibus aspernatur, veritatis aperiam vero illo.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde rem eum nulla ab consectetur accusantium vel repudiandae minus iste tempora voluptatum, magni maxime, repellat minima nobis sint eaque fuga?

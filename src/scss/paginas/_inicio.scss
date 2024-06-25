@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .dev {
-   height: 100vh;
+   height: 50vh;
    display: flex;
    background-color: v.$azul;
    flex-direction: column;
